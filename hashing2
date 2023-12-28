@@ -1,0 +1,13 @@
+import hashlib
+
+def sha256_hash(data):
+    hashed_value = hashlib.sha256(data.encode()).hexdigest()
+    return hashed_value
+
+# Example usage:
+data_to_hash = "Hello, World!"
+hashed_result = sha256_hash(data_to_hash)
+
+print(f"Original Data: {data_to_hash}")
+print(f"SHA-256 Hash: {hashed_result}")
+
