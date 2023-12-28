@@ -1,0 +1,10 @@
+def count_vowels_and_consonants(s):
+    vowels = "aeiouAEIOU"
+    num_vowels = sum(1 for char in s if char in vowels)
+    num_consonants = len(s) - num_vowels
+    return num_vowels, num_consonants
+
+input_string = "Hello, World!"
+vowels, consonants = count_vowels_and_consonants(input_string)
+print("Vowels:", vowels)
+print("Consonants:", consonants)
