@@ -1,0 +1,10 @@
+def simple_hash_function(data):
+    hashed_value = hash(data)
+    return hashed_value
+
+# Example usage:
+data_to_hash = "Hello, World!"
+hashed_result = simple_hash_function(data_to_hash)
+
+print(f"Original Data: {data_to_hash}")
+print(f"Hashed Value: {hashed_result}")
